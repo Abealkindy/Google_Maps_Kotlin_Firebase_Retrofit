@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Kotlin MVP Maps Retrofit Firebase</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "902849561740",
+    "firebase_url": "https://fir-mapretrofitmvpkotlin.firebaseio.com",
+    "project_id": "fir-mapretrofitmvpkotlin",
+    "storage_bucket": "fir-mapretrofitmvpkotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902849561740:android:e661806dbfbce163",
+        "android_client_info": {
+          "package_name": "com.abraham24.firebasemapretrofitmvpkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902849561740-8opafdfck82m3i1phnlv93viprt3pmh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abraham24.firebasemapretrofitmvpkotlin",
+            "certificate_hash": "3ce645bd18bb6b177ae448e77ee1c65f06031103"
+          }
+        },
+        {
+          "client_id": "902849561740-2vn3gc03sd6efc2h56eml468kh35enu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQjObiEUEGVZdTxYI0JEaxNyg5o7Vo4Yg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902849561740-2vn3gc03sd6efc2h56eml468kh35enu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902849561740:android:97f47f6f20ec3080",
+        "android_client_info": {
+          "package_name": "com.abraham24.kotlinmvpmapsretrofit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902849561740-sf9tnk5jgeii19l658t96rk3ottr55dn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abraham24.kotlinmvpmapsretrofit",
+            "certificate_hash": "3ce645bd18bb6b177ae448e77ee1c65f06031103"
+          }
+        },
+        {
+          "client_id": "902849561740-2vn3gc03sd6efc2h56eml468kh35enu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQjObiEUEGVZdTxYI0JEaxNyg5o7Vo4Yg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902849561740-2vn3gc03sd6efc2h56eml468kh35enu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

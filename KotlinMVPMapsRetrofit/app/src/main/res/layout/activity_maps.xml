@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abraham24.kotlinmvpmapsretrofit.MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:id="@+id/edit_from"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="#FFFF"
+        android:gravity="center_vertical"
+        android:hint="Dari Mana?"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/edit_to"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edit_from"
+        android:layout_margin="10dp"
+        android:background="#FFFF"
+        android:gravity="center_vertical"
+        android:hint="Kemana?"
+        android:maxLines="1" />
+
+    <LinearLayout
+        android:id="@+id/panel_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_jarak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="Jarak : " />
+
+        <TextView
+            android:id="@+id/text_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="Harga : " />
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="Waktu : " />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_check_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Check In"
+        android:textColor="#FFFF" />
+
+    <Button
+        android:id="@+id/button_traffic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_check_in"
+        android:layout_marginBottom="10dp"
+        android:background="#03a60d"
+        android:text="Check Traffic"
+        android:textColor="#FFFF" />
+
+</RelativeLayout>
+
