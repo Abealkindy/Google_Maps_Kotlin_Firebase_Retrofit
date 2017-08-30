@@ -13,7 +13,9 @@ import com.abraham24.kotlinmvpmapsretrofit.Init.ResponseJSON
 import com.google.android.gms.location.places.AutocompleteFilter
 import com.google.android.gms.location.places.Place
 import com.google.android.gms.location.places.ui.PlaceAutocomplete
-
+import android.location.LocationManager
+import android.location.Criteria
+import android.content.Context
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -103,9 +105,18 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-        // Add a marker in Sydney and move the camera
-        val sydney = LatLng(-6.1925297, 106.8001397)
-        mMap!!.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
+        // Add a marker in Location and move the camera
+        var locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        var criteria = Criteria()
+
+        var location = locationManager.getLastKnownLocation(locationManager
+                .getBestProvider(criteria, false))
+        var latitude = location.latitude
+        var longitude = location.longitude
+
+        
+        val sydney = LatLng(latitude, longitude)
+        mMap!!.addMarker(MarkerOptions().position(sydney).title("Your Place"))
         mMap!!.moveCamera(CameraUpdateFactory.newLatLng(sydney))
         mMap!!.animateCamera(CameraUpdateFactory.newLatLngZoom(sydney, 17.toFloat()))
 
